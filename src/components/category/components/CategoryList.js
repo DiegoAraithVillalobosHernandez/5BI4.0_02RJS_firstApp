@@ -8,7 +8,7 @@ export const CategoryList = () => {
   const [categories, setCategories] = useState([]);
 
   const getCategories = () =>{
-    axios({url:"/category", method:"GET"})
+    axios({url:"/category/", method:"GET"})
     .then((response) => {
       setCategories(response.data);
       setIsLoading(false)
